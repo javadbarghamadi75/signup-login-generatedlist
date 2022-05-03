@@ -10,8 +10,8 @@ class HomePage extends StatelessWidget {
 // class _SignupPageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    List<int> myList = List.generate(150, (index) => index);
-    print('myList.first : ${myList.first}');
+    List<String> myList = List.generate(150, (index) => 'index');
+    // print('myList.first : ${myList.first}');
 
     return Scaffold(
       body: Center(
@@ -41,9 +41,9 @@ class HomePage extends StatelessWidget {
               return Padding(
                 padding: const EdgeInsets.symmetric(vertical: 5),
                 child: ListTile(
-                  title: Text('${myList[index - 1]}'),
-                  subtitle:
-                      Text('This is item number : ${myList[index - 1] + 1}'),
+                  leading: const CircleAvatar(),
+                  title: Text(myList[index - 1]),
+                  subtitle: Text('This is item number : ${myList[index - 1]}'),
                   // contentPadding: const EdgeInsets.symmetric(horizontal: 5),
                   tileColor: Colors.grey[100],
                   shape: const ContinuousRectangleBorder(
