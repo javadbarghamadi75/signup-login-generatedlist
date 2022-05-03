@@ -11,7 +11,7 @@ class EntryPage extends StatelessWidget {
   })  : _greetingW = greetingWord,
         _greetingT = greetingText,
         super(key: key) {
-    print('$_greetingW & $_greetingT');
+    // print('$_greetingW & $_greetingT');
   }
 
   @override
